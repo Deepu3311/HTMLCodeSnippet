@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox Light</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: #151e3b;
+        }
+
+        .wrapper {
+            width: 20em;
+            position: absolute;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
+        .container {
+            height: 20em;
+            width: 20em;
+            position: relative;
+        }
+
+        a {
+            background-color: #a10051;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 1.4em;
+            padding: 0.8em 0;
+            color: #f5f5f5;
+            border-radius: 0.3em;
+        }
+
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 9.37em;
+            width: 18.75em;
+            background-color: #3a3256;
+            position: absolute;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            left: 50%;
+            top: 3em;
+            border-radius: 4.68em;
+        }
+
+        input[type="checkbox"]:before {
+            position: absolute;
+            content: "";
+            height: 8.12em;
+            width: 8.12em;
+            background-color: #7d7890;
+            border-radius: 50%;
+            top: 0.62em;
+            left: 0.62em;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        label[for="light"] {
+            height: 6.25em;
+            width: 0.62em;
+            background-color: #530a20;
+            position: absolute;
+            top: 8em;
+            left: 6em;
+            z-index: -1;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        label[for="light"]:after {
+            position: absolute;
+            content: "";
+            height: 0;
+            width: 0.75em;
+            border-bottom: 1.56em solid #14006b;
+            border-left: 0.62em solid transparent;
+            border-right: 0.62em solid transparent;
+            top: 5.93em;
+            left: -0.68em;
+        }
+
+        input[type="checkbox"],
+        label[for="light"] {
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked:before {
+            background-color: #fffaca;
+            left: 10em;
+            -webkit-box-shadow: 0 0 8.75em 1.87em rgba(196, 241, 255, 0.8);
+            box-shadow: 0 0 8.75em 1.87em rgba(196, 241, 255, 0.8);
+        }
+
+        input[type="checkbox"]:checked+label {
+            top: 9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <input type="checkbox" id="light" />
+            <label for="light"></label>
+        </div>
+        <a href="https://www.linkedin.com/in/rishabh-yadav-b68986204" target="_blank">My LinkedIn</a>
+    </div>
+</body>
+
+</html>
