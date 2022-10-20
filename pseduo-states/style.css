@@ -1,6 +1,6 @@
 body
 {
-	margin: 10px 10px 20px 30px;
+	margin: 9px 9px 22px 32px;
 
 }
 
@@ -12,20 +12,27 @@ img{
 
 .input{
 	display: block;
-	width: 95%;
-	margin: 10px;
+	width: 94%;
+	margin: 9px;
 }
+
+
 /*Pseduo-states*/
-.input:focus{
-	background: #aaa;
-	color: #1b4;
-	outline: none;
-	border: 1px solid black;
-}
-.input:hover{
-	font-size: 20px;
-}
+
 
 .p_class:active{
 	opacity: 0;
 }
+
+.input:hover{
+	font-size: 22px;
+}
+
+.input:focus{
+	background: #aaa;
+	color: #1b4;
+	outline: none;
+	border: 1px solid black;	
+}
+
+
